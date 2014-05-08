@@ -57,13 +57,15 @@ def send_mail(receivers,sub,content): #receivers：收件人；subject：主题�
 
 
 if __name__ == '__main__':  
-    usage = "usage: %prog [ -s <subject>] [-c <content>] [-r <mailto_list>]"
-    parser = argparse.ArgumentParser(usage=usage)
-    parser.add_argument("-?",action="help", help=optparse.SUPPRESS_HELP)
+    #usage = "usage: %prog [ -s <subject>] [-c <content>] [-r <mailto_list>]"
+    parser = argparse.ArgumentParser()
+    #parser.add_argument("-?",action="help", help=argparse.SUPPRESS_HELP)
     parser.add_argument("-s", "--subject",dest="subject", default='TEST',help="Please input the mail's subject")
     #parser.add_option("-c", "--content",dest="html", default='Hello World',help="Please input the mail's body")
 
     parser.add_argument("-r", "--receivers",dest="mailto_list",action="store",nargs='+',help="input this mailto_list", metavar="keqiang.ye@vipshop.com")
+    parser.add_argument('--version', action='version', version='%(prog)s 1.0')
+
     #group = optparse.OptionGroup(parser, "\nReport arguments bugs to keqiang.ye@vipshop.com!")
     #parser.add_option_group(group)
     #(options, args) = parser.parse_args()
