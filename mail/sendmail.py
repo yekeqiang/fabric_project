@@ -16,7 +16,7 @@ from email.MIMEBase import MIMEBase
 smtpserver = ''
 mail_username = ''
 mail_pass = ''
-mail_postfix = 'vipshop.com'
+mail_postfix = 'test.com'
 
 #def send_mail(receivers,sub,content,attachs): #receivers：收件人；subject：主题；content：邮件内容 attachs: 附件列表
 def send_mail(receivers,sub,content): #receivers：收件人；subject：主题；content：邮件内容
