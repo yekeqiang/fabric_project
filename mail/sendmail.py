@@ -11,7 +11,7 @@ from email.mime.text import MIMEText
 from email.MIMEBase import MIMEBase
 #from email.mime.image import MIMEImage # 发送图片用这个
 
-#mailto_list =['keqiang.ye@vipshop.com','timon.ma@vipshop.com']
+#mailto_list =['keqiang.ye@gmail.com','timon.ma@gmail.com']
 #mailto_list = ""
 smtpserver = ''
 mail_username = ''
